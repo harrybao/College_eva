@@ -1,7 +1,11 @@
 {
   "pages":[
     "pages/login/login",
-    "pages/index/index"
+    "pages/home/home",
+    "pages/map/map",
+    "pages/evalua/evalua",
+    "pages/real/real",
+    "pages/about/about"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -10,12 +14,25 @@
   },
   "tabBar": {
     "list": [{
-      "pagePath": "pages/login/login",
-      "text": "登陆界面"
+      "pagePath": "pages/home/home",
+      "text": "首页"
     },
     {
-      "pagePath": "pages/index/index",
-      "text": "首页"
-    }]
+      "pagePath": "pages/map/map",
+      "text": "地图查价"
+    },
+    {
+      "pagePath": "pages/evalua/evalua",
+      "text": "房产评估"
+    },
+    {
+      "pagePath": "pages/real/real",
+      "text": "房产时讯"
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "关于我们"
+    }
+    ]
   }
 }

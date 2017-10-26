@@ -1,6 +1,6 @@
 <!--pages/login/login.wxml-->
 <view class='loginImg'>
-  <text>大学评估</text>
+  <text>大学评估  evaluate</text>
 </view>
 <view class='logintext'>
   <input class='logintext-value' type='text' placeholder='手机号:'></input>
