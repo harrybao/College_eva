@@ -1,0 +1,39 @@
+/* pages/login/login.wxss */
+.loginImg {
+  height: 300rpx;
+}
+.logintext {
+  height: 280rpx;
+}
+.logintext-value {
+  margin-left: 100rpx;
+  height: 100rpx;
+}
+.logintext-line-css {
+  margin-left: 50rpx;
+  height: 1px;
+  width: 650rpx;
+  background-color: #808080;
+
+}
+.logintext-url {
+  margin-top: 20rpx;
+  margin-left: 550rpx;
+}
+.logintext-url-text {
+  color: dodgerblue;
+}
+.loginBtn-login {
+  margin: 100rpx;
+  margin-top: 80rpx;
+  margin-bottom: 50rpx;
+  background-color:dodgerblue;
+  color:white;
+}
+.loginBtn-regist {
+  margin: 100rpx;
+  margin-top: 10rpx;
+  background-color: white;
+  color:dodgerblue;
+  border:1px solid dodgerblue;  
+}

@@ -1,12 +1,21 @@
 {
   "pages":[
-    "pages/index/index",
-    "pages/logs/logs"
+    "pages/login/login",
+    "pages/index/index"
   ],
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#fff",
-    "navigationBarTitleText": "WeChat",
     "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/login/login",
+      "text": "登陆界面"
+    },
+    {
+      "pagePath": "pages/index/index",
+      "text": "首页"
+    }]
   }
 }

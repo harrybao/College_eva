@@ -1,0 +1,19 @@
+<!--pages/login/login.wxml-->
+<view class='loginImg'>
+  <text>大学评估</text>
+</view>
+<view class='logintext'>
+  <input class='logintext-value' type='text' placeholder='手机号:'></input>
+  <view class='logintext-line-css'></view>
+  <input class='logintext-value' type='text' placeholder='密码:'></input>
+  <view class='logintext-line-css'></view>
+  <view class='logintext-url'>
+    <navigator class='login-url-nav'>
+      <text class='logintext-url-text'>忘记密码?</text>
+    </navigator>
+  </view>
+</view>
+<view class='loginBtn'>
+  <button class='loginBtn-login'>登陆</button>
+  <button class='loginBtn-regist'>注册</button>
+</view>
