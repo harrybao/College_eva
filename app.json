@@ -1,11 +1,11 @@
 {
   "pages":[
-    "pages/login/login",
     "pages/home/home",
     "pages/map/map",
     "pages/evalua/evalua",
     "pages/real/real",
-    "pages/about/about"
+    "pages/about/about",
+    "pages/login/login"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -15,23 +15,33 @@
   "tabBar": {
     "list": [{
       "pagePath": "pages/home/home",
-      "text": "首页"
+      "text": "首页",
+      "iconPath": "images/home.png",
+      "selectedIconPath": "images/homeSelect.png"
     },
     {
       "pagePath": "pages/map/map",
-      "text": "地图查价"
+      "text": "地图查价",
+      "iconPath": "images/map.png",
+      "selectedIconPath": "images/mapSelect.png"
     },
     {
       "pagePath": "pages/evalua/evalua",
-      "text": "房产评估"
+      "text": "房产评估",
+      "iconPath": "images/evalua.png",
+      "selectedIconPath": "images/evaluaSelect.png"
     },
     {
       "pagePath": "pages/real/real",
-      "text": "房产时讯"
+      "text": "房产时讯",
+      "iconPath": "images/real.png",
+      "selectedIconPath": "images/realSelect.png"
     },
     {
       "pagePath": "pages/about/about",
-      "text": "关于我们"
+      "text": "关于我们",
+      "iconPath": "images/about.png",
+      "selectedIconPath": "images/aboutSelect.png"
     }
     ]
   }
