@@ -1,1 +1,5 @@
 /* pages/map/map.wxss */
+.map {
+  display: flex;
+  flex-direction: row;
+}

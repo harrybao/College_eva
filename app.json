@@ -9,42 +9,49 @@
   ],
   "window":{
     "backgroundTextStyle":"light",
-    "navigationBarBackgroundColor": "#fff",
+    "navigationBarBackgroundColor": "#368BDB",
     "navigationBarTextStyle":"black"
   },
   "tabBar": {
-    "color": "#000",
-    "selectedColor": "#00f",
+    "color": "#707070",
+    "selectedColor": "#368bdb",
     "list": [{
       "pagePath": "pages/home/home",
       "text": "首页",
       "iconPath": "images/home.png",
-      "selectedIconPath": "images/homeSelect.png"
+      "selectedIconPath": "images/homesel.png"
     },
     {
       "pagePath": "pages/map/map",
       "text": "地图查价",
       "iconPath": "images/map.png",
-      "selectedIconPath": "images/mapSelect.png"
+      "selectedIconPath": "images/mapsel.png"
     },
     {
       "pagePath": "pages/evalua/evalua",
       "text": "房产评估",
-      "iconPath": "images/evalua.png",
-      "selectedIconPath": "images/evaluaSelect.png"
+      "iconPath": "images/evaluate.png",
+      "selectedIconPath": "images/evaluatesel.png"
     },
     {
       "pagePath": "pages/real/real",
       "text": "房产时讯",
       "iconPath": "images/real.png",
-      "selectedIconPath": "images/realSelect.png"
+      "selectedIconPath": "images/realsel.png"
     },
     {
       "pagePath": "pages/about/about",
       "text": "关于我们",
       "iconPath": "images/about.png",
-      "selectedIconPath": "images/aboutSelect.png"
+      "selectedIconPath": "images/aboutsel.png"
     }
     ]
-  }
+  },
+  "networkTimeout": {
+    "request": 3000,
+    "connectSocket": 3000,
+    "uploadFile": 3000,
+    "downloadFile": 3000
+  },
+  "debug": true
 }

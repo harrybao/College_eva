@@ -1,2 +1,8 @@
 <!--pages/map/map.wxml-->
-<text>pages/map/map.wxml</text>
+<view class='map'>
+  <view>租赁价格</view>
+  <view>市场价格</view>
+  <view>评估价格</view>
+  <view> <icon type='search' size='30'></icon> </view>
+</view>
+<map id="map"  scale="5"bindcontroltap="controltap"bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 580px;"></map>

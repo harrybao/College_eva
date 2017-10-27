@@ -1,3 +1,40 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
-<view>harrykee</view>
+<view class='headborder'>
+  <view class='headborder-img'>
+    <image src='../../images/logo.png' class='headborder-img-i' ></image>
+  </view>
+  <view class='headborder-search'>
+    <input class='search-value' type='text' placeholder='搜索' placeholder-class='search-pla'/>
+    <icon class='search-logo' type="search" size="24" color='white'/>
+  </view>
+</view>
+<view class='rollimg'>
+  <view class='rollimg-slo'>
+    <view class='dxpg'>
+      <text >大学评估</text>
+    </view>  
+    <view class='zzjzfx'>
+      <text >专注价值发现</text>
+    </view>  
+  </view>
+</view>
+<view class='blank'>
+</view>
+<view class='bottomimg'>
+  <view class='bottomimg-rev' bindtap='bindViewTap'>
+    <view >
+      <image src='../../images/cha.png' class='image-cha'></image>
+    </view>
+    <view class='bottomt'>
+      <text>地图查价</text>
+    </view>
+  </view>
+  <view class='bottomimg-che' bindtap='bindViewBottom'>
+    <view >
+      <image src='../../images/ping.png' class='image-cha'></image>
+    </view>
+    <view class='bottomt'>
+      <text>房产评估</text>
+    </view>
+  </view>
+</view>
