@@ -3,3 +3,8 @@
   display: flex;
   flex-direction: row;
 }
+.mapev {
+  margin-top:26rpx;
+  height: 30rpx;
+  width:220rpx;
+}

@@ -5,16 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-    bindViewTap: function () {
-      wx.navigateTo({
-        url: '../map/map'
-      })
-    },
-    bindViewBottom:function(){
-      wx.navigateTo({
-        url: '../evalua/evalua',
-      })
-    }
+    
   },
 
   /**
@@ -22,6 +13,16 @@ Page({
    */
   onLoad: function (options) {
     
+  },
+  bindViewTap: function () {
+    wx.navigateTo({
+      url:'../map/map'
+    })
+  },
+  bindViewBottom: function () {
+    wx.navigateTo({
+      url:'../evalua/evalua',
+    })
   },
 
   /**

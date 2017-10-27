@@ -21,7 +21,7 @@
 <view class='blank'>
 </view>
 <view class='bottomimg'>
-  <view class='bottomimg-rev' bindtap='bindViewTap'>
+  <view class='bottomimg-rev' ontap='bindViewTap'>
     <view >
       <image src='../../images/cha.png' class='image-cha'></image>
     </view>
@@ -29,7 +29,7 @@
       <text>地图查价</text>
     </view>
   </view>
-  <view class='bottomimg-che' bindtap='bindViewBottom'>
+  <view class='bottomimg-che' ontap='bindViewBottom'>
     <view >
       <image src='../../images/ping.png' class='image-cha'></image>
     </view>
