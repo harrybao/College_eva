@@ -44,20 +44,21 @@
   flex-direction: row-reverse; 
 }
 .rollimg-slo {
-  margin-top: 140rpx;
-  background-color: #FC5409;
-  height: 160rpx;
-  width: 400rpx;
+  margin-top: 100rpx;
   filter:opacity(70%);
+  height: 0;
+  width: 330rpx;
+  border-bottom: 200rpx solid #FC5409;
+  border-left: 100rpx solid transparent;
 }
 .dxpg {
-  margin-left:140rpx;
-  margin-top:20rpx;
+  margin-left:80rpx;
+  margin-top:40rpx;
   color: white;
   font-size: 44rpx;
 }
 .zzjzfx {
-  margin-left:140rpx;
+  margin-left:80rpx;
   margin-top:10rpx;
   color: white;
   font-size:30rpx;
