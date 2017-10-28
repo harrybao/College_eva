@@ -15,12 +15,12 @@ Page({
     
   },
   bindViewTap: function () {
-    wx.navigateTo({
+    wx.switchTab({
       url:'../map/map'
     })
   },
   bindViewBottom: function () {
-    wx.navigateTo({
+    wx.switchTab({
       url:'../evalua/evalua',
     })
   },
