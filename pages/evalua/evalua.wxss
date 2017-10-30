@@ -11,15 +11,6 @@
   width: 400rpx;
   display: flex;
   flex-direction: row;
-  border:1rpx solid red;
-}
-.text_value{
-  margin-left:90rpx;
-  color:#368BDB;
-  font-size: 46rpx;
-}
-.text_value2 {
-  font-size: 36rpx;
 }
 .mid_value{
   height:90rpx;
@@ -28,11 +19,10 @@
   display: flex;
   flex-direction: row;
 }
-.butom_value {
-  height:170rpx;
+.mid_value1{
+  height:180rpx;
   width:746rpx;
   border-bottom:1rpx solid #DDDDDD;
-  
 }
 .mid_val {
   height: 60rpx;
@@ -40,6 +30,11 @@
   margin-top: 15rpx;
   display: flex;
   flex-direction: row;
+}
+.butom_value {
+  height:170rpx;
+  width:746rpx;
+  border-bottom:1rpx solid #DDDDDD; 
 }
 .btom_btn {
   height:200rpx;

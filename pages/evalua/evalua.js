@@ -5,7 +5,23 @@ Page({
    * 页面的初始数据
    */
   data: {
-    community:"万科金源湾"
+    community:"万科金源湾",
+    mouth:"本月均价",
+    price:"19000(元/m)",
+    listData:[
+      {
+        listLeft:"物业类型：",
+        selectLeft:"请选择>",
+        listRight:"价值时点：",
+        selectRight:"请选择>"
+      },
+      {
+        listLeft: "建筑面积：",
+        selectLeft: "请输入>",
+        listRight: "电梯配置：",
+        selectRight: "请选择>"
+      }
+    ]
   },
 
   /**

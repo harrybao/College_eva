@@ -1,53 +1,34 @@
 <!--pages/evalua/evalua.wxml-->
-<view class='container'>
-  <view class='top_value'>
-    <view class='top_val'>
-      <text class='text_value'>{{community}}</text>
-    </view>
-    <view class='top_val'>
-      <view>
-        <text class='text_value2'>本月均价</text>
-      </view>
-      <view>
-        <text>3000/m</text>
-      </view>
-    </view>
+<view class='top_value'>
+  <view class='top_val'>
+    <text style='margin-left:90rpx;color:#368BDB;font-size: 46rpx;'>{{community}}</text>
   </view>
-  <view class='mid_value'>
-    <view class='mid_val'>
-      <view>
-        <text>物业类型:</text>
-      </view>
-      <view>
-        <text>请选择></text>
-      </view>
-    </view>
-    <view class='mid_val'>
-      <view>
-        <text>物业类型</text>
-      </view>
-      <view>
-        <text>请选择></text>
-      </view>
-    </view>
+  <view class='top_val'>
+    <text style='font-size: 36rpx;'>{{mouth}}</text>
+    <text style='font-size: 33rpx;'>{{price}}</text>
   </view>
-  <view class='mid_value'>
+</view>
+<view class='mid_value' wx:for="{{listData}}">
+  <view class='mid_val'>
+    <text style='margin-left:20rpx;'>{{item.listLeft}}</text>
+    <text style='font-size:30rpx;color:#DDDDDD;'>{{item.selectLeft}}</text>
   </view>
-  <view class='mid_value'>
+  <view class='mid_val'>
+    <text style='margin-left:20rpx;'>{{item.listRight}}</text>
+    <text style='font-size:30rpx;color:#DDDDDD;'>{{item.selectRight}}</text>
   </view>
-  <view class='mid_value'>
+</view>
+<view class='mid_value1'>
+</view>
+<view class='butom_value'>
+  <view></view>
+  <view></view>
+</view>
+<view class='btom_btn'>
+  <view class='tom_button'>
+    <button style='background-color:#368BDB;'>评估一下</button>
   </view>
-  <view class='butom_value'>
+  <view class='tom_button'>
+    <button>重置信息</button>
   </view>
-  <view class='butom_value'>
-  </view>
-  <view class='btom_btn'>
-    <view class='tom_button'>
-      <button>评估一下</button>
-    </view>
-    <view class='tom_button'>
-      <button>重置信息</button>
-    </view>
-  </view>
-
 </view>
