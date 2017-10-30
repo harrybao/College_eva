@@ -11,7 +11,36 @@ Page({
       '../../images/house/house02.jpg'
     ],
     interval: 3000,
-    duration: 1000  
+    duration: 1000,
+    listDate:[{
+      listImg:'../../images/house/house03.jpg',
+      listPoint:'../../images/point.png',
+      listValue:"汇丰国际广场",
+      listDate:"2017年10月31日",
+      listDetil:"首开。回峰国际3003004343。。。。"
+    },
+      {
+        listImg: '../../images/house/house03.jpg',
+        listPoint: '../../images/point.png',
+        listValue: "汇丰国际广场",
+        listDate: "2017年10月31日",
+        listDetil: "首开。回峰国际3003004343。。。。"
+      }
+      ,{
+      listImg:'../../images/house/house03.jpg',
+      listPoint:'../../images/point.png',
+      listValue:"汇丰国际广场",
+      listDate:"2017年10月31日",
+      listDetil:"首开。回峰国际3003004343。。。。"
+      },
+       {
+      listImg:'../../images/house/house03.jpg',
+      listPoint:'../../images/point.png',
+      listValue:"汇丰国际广场",
+      listData:"2017年10月31日",
+      listDetil:"首开。回峰国际3003004343。。。。"
+      }
+    ]
   },
 
   /**

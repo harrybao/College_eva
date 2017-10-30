@@ -28,24 +28,18 @@
   </view>
 </view>
 <view class='bottom_bk'></view>
-<view class='bottom_list'>
+<view class='bottom_list'wx:for="{{listDate}}">
   <view class='list_img'>
-    <image src='../../images/house/house03.jpg' style="height:150rpx;width:230rpx;"></image>
+    <image src='{{item.listImg}}' style="height:150rpx;width:230rpx;"></image>
   </view>
   <view class='list_text'>
     <view class='list_point'>
-      <view>
-        <image src='../../images/point.png' style='height:15rpx;width:15rpx;'></image>
-      </view>
-      <view>
-        <text>汇丰国际广场</text>
-      </view>
+        <image src='{{item.listPoint}}' style='height:15rpx;width:15rpx;margin-top:14rpx;'></image>
+        <text  style='margin-left:30rpx;'>{{item.listValue}}</text>
     </view>
-    <view>
-      <text>2017年10月31日</text>
-    </view>
-    <view>
-      <text>首开。回峰国际3003004343。。。。</text>
+    <view class='list_text'>
+      <text style='margin-left:30rpx;font-size:26rpx;'>{{item.listData}}</text>
+      <text style='margin-left:30rpx;font-size:26rpx;'>{{item.listDetil}}</text>
     </view>
   </view>
 </view>
