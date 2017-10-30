@@ -5,7 +5,13 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    imageWidth: wx.getSystemInfoSync().windowWidth,
+    imgUrls: [
+      '../../images/house/house01.jpg',
+      '../../images/house/house02.jpg'
+    ],
+    interval: 3000,
+    duration: 1000  
   },
 
   /**

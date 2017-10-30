@@ -1,1 +1,54 @@
 /* pages/evalua/evalua.wxss */
+.top_value {
+  height: 190rpx;
+  width: 746rpx;
+  border-bottom:1rpx solid #DDDDDD;
+}
+.top_val {
+  margin-top: 20rpx;
+  margin-left: 175rpx;
+  height: 60rpx;
+  width: 400rpx;
+  display: flex;
+  flex-direction: row;
+  border:1rpx solid red;
+}
+.text_value{
+  margin-left:90rpx;
+  color:#368BDB;
+  font-size: 46rpx;
+}
+.text_value2 {
+  font-size: 36rpx;
+}
+.mid_value{
+  height:90rpx;
+  width:746rpx;
+  border-bottom:1rpx solid #DDDDDD;
+  display: flex;
+  flex-direction: row;
+}
+.butom_value {
+  height:170rpx;
+  width:746rpx;
+  border-bottom:1rpx solid #DDDDDD;
+  
+}
+.mid_val {
+  height: 60rpx;
+  width: 370rpx;
+  margin-top: 15rpx;
+  display: flex;
+  flex-direction: row;
+}
+.btom_btn {
+  height:200rpx;
+  width: 748rpx;
+  display: flex;
+  flex-direction: row;
+}
+.tom_button {
+  width: 275rpx;
+  margin-left: 60rpx;
+  margin-top: 60rpx;
+}

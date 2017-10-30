@@ -1,2 +1,51 @@
 <!--pages/real/real.wxml-->
-<text>pages/real/real.wxml</text>
+<view class='headborder'>
+  <view class='headborder-img'>
+    <image src='../../images/logo.png' class='headborder-img-i' ></image>
+  </view>
+  <view class='headborder-search'>
+    <input class='search-value' type='text' placeholder='您要找的小区是' placeholder-class='search-pla'/>
+    <icon class='search-logo' type="search" size="24" color='white'/>
+  </view>
+</view>
+<swiper class='swiper_dd' indicator-dots="true"
+  autoplay="true" interval="{{interval}}" duration="{{duration}}">
+  <block wx:for="{{imgUrls}}">
+    <swiper-item>
+     <image src="{{item}}" class="slide-image" style="width: {{imageWidth}}px;"/>
+    </swiper-item>
+  </block>
+</swiper>
+<view class='title'> 
+  <view class='title_value'>
+    <text>行业动态</text>
+  </view>
+  <view class='title_value'>
+    <text>政策法规</text>
+  </view>
+  <view class='title_value'>
+    <text>研究成果</text>
+  </view>
+</view>
+<view class='bottom_bk'></view>
+<view class='bottom_list'>
+  <view class='list_img'>
+    <image src='../../images/house/house03.jpg' style="height:150rpx;width:230rpx;"></image>
+  </view>
+  <view class='list_text'>
+    <view class='list_point'>
+      <view>
+        <image src='../../images/point.png' style='height:15rpx;width:15rpx;'></image>
+      </view>
+      <view>
+        <text>汇丰国际广场</text>
+      </view>
+    </view>
+    <view>
+      <text>2017年10月31日</text>
+    </view>
+    <view>
+      <text>首开。回峰国际3003004343。。。。</text>
+    </view>
+  </view>
+</view>

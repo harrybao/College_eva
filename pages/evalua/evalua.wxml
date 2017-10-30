@@ -1,19 +1,53 @@
 <!--pages/evalua/evalua.wxml-->
-<view class="group">
-  <block wx:for="{{iconSize}}">
-    <icon type="success" size="{{item}}"/>
-  </block>
-</view>
+<view class='container'>
+  <view class='top_value'>
+    <view class='top_val'>
+      <text class='text_value'>{{community}}</text>
+    </view>
+    <view class='top_val'>
+      <view>
+        <text class='text_value2'>本月均价</text>
+      </view>
+      <view>
+        <text>3000/m</text>
+      </view>
+    </view>
+  </view>
+  <view class='mid_value'>
+    <view class='mid_val'>
+      <view>
+        <text>物业类型:</text>
+      </view>
+      <view>
+        <text>请选择></text>
+      </view>
+    </view>
+    <view class='mid_val'>
+      <view>
+        <text>物业类型</text>
+      </view>
+      <view>
+        <text>请选择></text>
+      </view>
+    </view>
+  </view>
+  <view class='mid_value'>
+  </view>
+  <view class='mid_value'>
+  </view>
+  <view class='mid_value'>
+  </view>
+  <view class='butom_value'>
+  </view>
+  <view class='butom_value'>
+  </view>
+  <view class='btom_btn'>
+    <view class='tom_button'>
+      <button>评估一下</button>
+    </view>
+    <view class='tom_button'>
+      <button>重置信息</button>
+    </view>
+  </view>
 
-<view class="group">
-  <block wx:for="{{iconType}}">
-    <icon type="{{item}}" size="40"/>
-  </block>
-</view>
-
-
-<view class="group">
-  <block wx:for="{{iconColor}}">
-    <icon type="success" size="40" color="{{item}}"/>
-  </block>
 </view>

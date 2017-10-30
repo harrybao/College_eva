@@ -10,7 +10,7 @@
   "window":{
     "backgroundTextStyle":"light",
     "navigationBarBackgroundColor": "#368BDB",
-    "navigationBarTextStyle":"black"
+    "navigationBarTextStyle":"light"
   },
   "tabBar": {
     "color": "#707070",

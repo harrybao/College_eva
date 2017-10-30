@@ -2,9 +2,11 @@
 .map {
   display: flex;
   flex-direction: row;
+  height: 100rpx;
 }
 .mapev {
   margin-top:26rpx;
+  margin-left: 10rpx;
   height: 30rpx;
   width:220rpx;
 }
