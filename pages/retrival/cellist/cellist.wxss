@@ -1,0 +1,43 @@
+/* pages/cellist/cellist.wxss */
+.upper {
+  height:85rpx;
+  background-color: #368BDB;
+}
+.upper_topp {
+  margin-left: 50rpx;
+  height: 74rpx;
+  width: 640rpx;
+  background-color: #7EAFE0;
+  filter:opacity(80%);
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.search {
+  height: 20rpx;
+  width: 510rpx;
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+}
+.houselist{
+  height: 240rpx;
+  border-bottom:1rpx solid #7A7A7A;
+  display: flex;
+  flex-direction: row;
+}
+.houseimg{
+  width:260rpx;
+  height: 248rpx;
+}
+.houseadd{
+  width:260rpx;
+  height: 248rpx;
+  display: flex;
+  flex-direction: column;
+}
+.priceflu {
+  width: 230rpx;
+  height: 248rpx;
+  display: flex;
+  flex-direction: column;
+}

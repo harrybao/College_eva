@@ -1,7 +1,7 @@
 <!--pages/home/home.wxml-->
 <view class='headborder'>
-  <image src='../../images/logo.png' style='margin-left: 30rpx;height: 80rpx;width: 210rpx;' />
-  <view class='headborder-search'>
+  <image src='../../images/icons/logowhite.png' style='margin-top: 15rpx;margin-left: 30rpx;height: 60rpx;width: 160rpx;' />
+  <view class='headborder-search' >
     <input class='search-value' type='text' placeholder='搜索' placeholder-style='color: white;font-size:30rpx;'/>
     <icon type="search" size="24" color='white' style='margin-top: 16rpx;'/>
   </view>
@@ -21,11 +21,11 @@
 <view style='height: 130rpx;background-color: white;'/>
 <view class='bottomimg'>
   <view class='bottomimg-rev' style='background-color: #467Cd4;margin-top: 150rpx;' bindtap='bindViewTap'>
-    <image src='../../images/cha.png' class='image-cha'/>
+    <image src='../../images/icons/check.png' class='image-cha'/>
     <text class='bottomt'>地图查价</text>
   </view>
   <view class='bottomimg-rev' style='background-color: #FC5409;margin-top: 80rpx;' bindtap='bindViewBottom'>
-    <image src='../../images/ping.png' class='image-cha'/>
+    <image src='../../images/icons/review.png' class='image-cha'/>
     <text class='bottomt'>房产评估</text>
   </view>
 </view>

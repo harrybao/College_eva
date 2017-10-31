@@ -1,0 +1,27 @@
+/* pages/map/search/search.wxss */
+.upper {
+  height:85rpx;
+  background-color: #368BDB;
+}
+.upper_topp {
+  margin-left: 50rpx;
+  height: 74rpx;
+  width: 640rpx;
+  background-color: #7EAFE0;
+  filter:opacity(80%);
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.search {
+  height: 20rpx;
+  width: 510rpx;
+  margin-left: 50rpx;
+  margin-top: 10rpx;
+}
+.logoimg {
+  height: 200rpx;
+  width: 400rpx;
+  margin-top:440rpx;
+  margin-left:210rpx;
+}

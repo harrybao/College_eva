@@ -1,6 +1,6 @@
 <!--pages/real/real.wxml-->
 <view class='headborder'>
-  <image src='../../images/logo.png' style='margin-left: 30rpx;height: 80rpx;width: 210rpx;' />
+  <image src='../../images/icons/logowhite.png' style='margin-top: 15rpx;margin-left: 30rpx;height: 60rpx;width: 160rpx;' />
   <view class='headborder-search'>
     <input class='search-value' type='text' placeholder='搜索' placeholder-style='color: white;font-size:30rpx;'/>
     <icon type="search" size="24" color='white' style='margin-top: 16rpx;'/>
@@ -14,23 +14,32 @@
     </swiper-item>
   </block>
   </swiper>
-<view class='title'> 
-  <text class='title_value'>行业动态</text>
-  <text class='title_value'>政策法规</text>
-  <text class='title_value'>研究成果</text>
+<view class='title'>
+  <view class='title_box'>
+    <label class='title_value'>行业动态</label>
+    <view class='title_line'/>
+  </view>
+  <view class='title_box'>
+    <label class='title_value'>行业动态</label>
+    <view class='title_line'/>
+  </view>
+  <view class='title_box'>
+    <label class='title_value'>行业动态</label>
+    <view class='title_line' />
+  </view>
 </view>
 <view class='bottom_bk'></view>
-<view class='bottom_list'wx:for="{{listDate}}">
+<view class='bottom_list'wx:for="{{listData}}">
   <view class='list_img'>
     <image src='{{item.listImg}}' style="height:150rpx;width:230rpx;"></image>
   </view>
   <view class='list_text'>
     <view class='list_point'>
-        <image src='{{item.listPoint}}' style='height:15rpx;width:15rpx;margin-top:14rpx;'></image>
-        <text  style='margin-left:30rpx;'>{{item.listValue}}</text>
+        <image src='{{item.listPoint}}' style='height:15rpx;width:15rpx;margin-top:14rpx;margin-left:14rpx;'/>
+        <text  style='margin-left:16rpx;'>{{item.listValue}}</text>
     </view>
     <view class='list_text'>
-      <text style='margin-left:30rpx;font-size:26rpx;'>{{item.listData}}</text>
+      <text style='margin-left:30rpx;font-size:26rpx;'>{{item.listDate}}</text>
       <text style='margin-left:30rpx;font-size:26rpx;'>{{item.listDetil}}</text>
     </view>
   </view>

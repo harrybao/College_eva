@@ -1,0 +1,55 @@
+<!--pages/evalua/evalua.wxml-->
+<view class='upper'>
+  <view class='upper_top'>
+    <text style='margin-left:90rpx;color:#368BDB;font-size: 46rpx;'>{{community}}</text>
+  </view>
+  <view class='upper_top'>
+    <text style='font-size: 34rpx;margin-top:10rpx;'>{{mouth}}</text>
+    <text style='font-size: 32rpx;margin-top:12rpx;margin-left:30rpx;color:#FE5518;'>{{price}}</text>
+    <text style='font-size: 20rpx;margin-top:21rpx;margin-left:10rpx;'>{{unit}}</text>
+  </view>
+</view>
+<view class='central' wx:for="{{listData}}">
+  <view class='central_item' wx:for="{{item}}">
+    <text style='margin-left:20rpx;margin-top:10rpx;font-size:28rpx;'>{{item.listLeft}}</text>
+    <text style='font-size:24rpx;color:#9A9A9A;margin-top:14rpx;margin-left:80rpx;'>{{item.selectLeft}}</text><text style='color:#9A9A9A;font-size:50rpx;'>></text>
+  </view>
+</view>
+<view class='central'>
+  <view class='central_item' style='width:100%;'>
+    <text style='margin-left:20rpx;margin-top:10rpx;font-size:28rpx;'>楼层：</text>
+    <text style='font-size:24rpx;color:#9A9A9A;margin-top:14rpx;margin-left:90rpx;'>请输入</text>
+    <text style='  border:1rpx solid #9A9A9A;color:#9A9A9A;font-size:20rpx;margin-top:14rpx;margin-left:20rpx;'>层</text>
+    <text style='font-size:24rpx;color:#9A9A9A;margin-top:14rpx;margin-left:140rpx;'>请输入</text>
+    <text style='  border:1rpx solid #9A9A9A;color:#9A9A9A;font-size:20rpx;margin-top:14rpx;margin-left:20rpx;'>总层数</text>
+  </view>
+</view>
+<view class='central'>
+  <view class='central_item'>
+    <text style='margin-left:20rpx;margin-top:10rpx;font-size:28rpx;'>朝向：</text>
+    <text style='font-size:24rpx;color:#9A9A9A;margin-top:14rpx;margin-left:145rpx;'>请选择</text>
+    <text style='color:#9A9A9A;font-size:50rpx;'>></text>
+  </view>
+</view>
+<view class='lower'wx:for="{{listItem}}">
+  <view class='lower_left'>
+    <text style='margin-left:20rpx;margin-top:10rpx;font-size:28rpx;'>{{item.name}}</text>
+  </view>
+  <view class='lower_right'>
+    <view class='right_item' >
+      <checkbox-group bindchange="checkboxChange">
+        <label class="checkbox">
+          <checkbox   class='checkstyle' value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+        </label>
+      </checkbox-group>
+    </view>
+  </view>
+</view>
+<view class='lower_bottom'>
+  <view class='tom_button'>
+    <button style='background-color:#368BDB;' bindtap='assessResult'>评估一下</button>
+  </view>
+  <view class='tom_button'>
+    <button>重置信息</button>
+  </view>
+</view>

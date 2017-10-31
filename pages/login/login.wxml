@@ -4,11 +4,11 @@
 </view>
 <view class='logintext'>
   <view class='login-lo'>
-    <image src='../../images/phone.png' class='login-logo'></image>
+    <image src='../../images/icons/phone.png' class='login-logo'></image>
     <input class='login-value' type='text' placeholder='手机号:'></input>
   </view> 
   <view class='login-lo'>
-    <image src='../../images/passwd.png' class='login-logo'></image>
+    <image src='../../images/icons/passwd.png' class='login-logo'></image>
     <input class='login-value' type='text' placeholder='密码:'></input>
     <image src='../../images/viewpwd.png' class='login-logo'></image>
   </view>

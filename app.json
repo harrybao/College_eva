@@ -2,10 +2,16 @@
   "pages":[
     "pages/home/home",
     "pages/map/map",
-    "pages/evalua/evalua",
+    "pages/retrival/evalua/evalua",
     "pages/real/real",
     "pages/about/about",
-    "pages/login/login"
+    "pages/login/login",
+    "pages/map/detail/detail",
+    "pages/map/detailop/detailop",
+    "pages/map/search/search",
+    "pages/retrival/retrival",
+    "pages/retrival/cellist/cellist",
+    "pages/retrival/result/result"
   ],
   "window":{
     "backgroundTextStyle":"light",
@@ -18,32 +24,32 @@
     "list": [{
       "pagePath": "pages/home/home",
       "text": "首页",
-      "iconPath": "images/home.png",
-      "selectedIconPath": "images/homesel.png"
+      "iconPath": "images/icons/home.png",
+      "selectedIconPath": "images/icons/homesel.png"
     },
     {
       "pagePath": "pages/map/map",
       "text": "地图查价",
-      "iconPath": "images/map.png",
-      "selectedIconPath": "images/mapsel.png"
+      "iconPath": "images/icons/map.png",
+      "selectedIconPath": "images/icons/mapsel.png"
     },
     {
-      "pagePath": "pages/evalua/evalua",
+      "pagePath": "pages/retrival/retrival",
       "text": "房产评估",
-      "iconPath": "images/evaluate.png",
-      "selectedIconPath": "images/evaluatesel.png"
+      "iconPath": "images/icons/evaluate.png",
+      "selectedIconPath": "images/icons/evaluatesel.png"
     },
     {
       "pagePath": "pages/real/real",
       "text": "房产时讯",
-      "iconPath": "images/real.png",
-      "selectedIconPath": "images/realsel.png"
+      "iconPath": "images/icons/real.png",
+      "selectedIconPath": "images/icons/realsel.png"
     },
     {
       "pagePath": "pages/about/about",
       "text": "关于我们",
-      "iconPath": "images/about.png",
-      "selectedIconPath": "images/aboutsel.png"
+      "iconPath": "images/icons/about.png",
+      "selectedIconPath": "images/icons/aboutsel.png"
     }
     ]
   },

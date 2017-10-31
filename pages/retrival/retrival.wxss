@@ -1,0 +1,24 @@
+/* pages/retrival/retrival.wxss */
+.upperhead {
+  height: 160rpx;
+  width: 400rpx;
+  margin-top: 140rpx;
+}
+.upper {
+  margin-top:100rpx;
+  height: 80rpx;
+  width: 600rpx;
+  border: 1px solid #368BDB;
+  border-radius: 10rpx;
+  display: flex;
+  flex-direction: row;
+}
+.search {
+  margin-top:14rpx;
+  margin-left:36rpx;
+}
+.dream {
+  margin-top:160rpx;
+  height: 300rpx;
+  width: 500rpx;
+}

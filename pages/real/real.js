@@ -12,32 +12,32 @@ Page({
     ],
     interval: 3000,
     duration: 1000,
-    listDate:[{
+    listData:[{
       listImg:'../../images/house/house03.jpg',
-      listPoint:'../../images/point.png',
+      listPoint:'../../images/icons/point.png',
       listValue:"汇丰国际广场",
       listDate:"2017年10月31日",
       listDetil:"首开。回峰国际3003004343。。。。"
     },
       {
-        listImg: '../../images/house/house03.jpg',
-        listPoint: '../../images/point.png',
+        listImg: '../../images/house/house06.jpg',
+        listPoint: '../../images/icons/point.png',
         listValue: "汇丰国际广场",
         listDate: "2017年10月31日",
         listDetil: "首开。回峰国际3003004343。。。。"
       }
       ,{
-      listImg:'../../images/house/house03.jpg',
-      listPoint:'../../images/point.png',
+      listImg:'../../images/house/house07.jpg',
+      listPoint:'../../images/icons/point.png',
       listValue:"汇丰国际广场",
       listDate:"2017年10月31日",
       listDetil:"首开。回峰国际3003004343。。。。"
       },
        {
       listImg:'../../images/house/house03.jpg',
-      listPoint:'../../images/point.png',
+      listPoint:'../../images/icons/point.png',
       listValue:"汇丰国际广场",
-      listData:"2017年10月31日",
+      listDate:"2017年10月31日",
       listDetil:"首开。回峰国际3003004343。。。。"
       }
     ]
