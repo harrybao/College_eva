@@ -1,1 +1,80 @@
 /* pages/retrival/result/result.wxss */
+.eupper {
+  height: 530rpx;
+  border-bottom:13rpx solid #F4F4F4;
+}
+.upcentral {
+  height: 280rpx;
+  background-color:#368BDB;
+  display:flex;
+  flex-direction:column;
+
+}
+.upcentralmid {
+  height:100rpx;
+  display: flex;
+  flex-direction: row;
+}
+.detialbtn{
+  margin-left:350rpx;
+  height: 60rpx;
+  width: 60rpx;
+  border-radius: 30rpx;
+  background-color:white;
+  font-size:20rpx;
+  display: flex;
+  flex-direction: column;
+}
+.upcenlow {
+  margin-left:50rpx;
+  height: 180rpx;
+  width: 650rpx;
+  display: flex;
+  flex-direction:row;
+}
+.upcenlow_list{
+  height: 180rpx;
+  width:325rpx;
+  display: flex;
+  flex-direction: column;
+}
+.upmiddle {
+  height:80rpx;
+  background-color: blue;
+}
+.uplower {
+  height: 170rpx;
+}
+.ecentral {
+  height:470rpx;
+  border-bottom:13rpx solid #F4F4F4;
+}
+.centralup {
+  height: 80rpx;
+  display: flex;
+  flex-direction: column;
+}
+.centralmid {
+  height:100rpx;
+  background-color:#EBF2FC;
+  display:flex;
+  flex-direction:row;
+}
+.textstyle{
+  display:flex;
+  flex-direction:column;
+  font-size:30rpx;
+  color:#368BDB;
+  width:150rpx;
+  margin-top:10rpx;
+}
+.centralist {
+  height: 60rpx;
+  display:flex;
+  flex-direction:row;
+}
+.elower {
+  height:170rpx;
+  display: flex;
+  flex-direction:row;
+}

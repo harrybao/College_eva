@@ -29,25 +29,23 @@ Page({
     ],
     listItem: [
       {
-        ddd:"ddd",
+        secenry:"内部设施：",
         list:[
-          [{ name: 'USA', value: '美国'},
-            { name: 'CHN', value: '中国', checked: 'true'},
-            { name: 'BRA', value: '巴西'}],
-          [{ name: 'JPN', value: '日本'},
-            { name: 'ENG', value: '英国'}, 
-            { name: 'TUR', value: '法国'}]
+          [{ name: 'SEA', value: '海景'},
+            { name: 'LAKE', value: '湖景'},
+            { name: 'ROAD', value: '临路'}],
+          [{ name: 'MOUN', value: '临山'},
+            { name: 'CEME', value: '临墓地'}, 
+            { name: 'HIGH', value: '临高压设施'}]
         ]
       },
       {
-        ddd: "ddd",
+        secenry: "景观：",
         list: [
-          [{ name: 'USA', value: '美国' },
-          { name: 'CHN', value: '中国', checked: 'true' },
-          { name: 'BRA', value: '巴西' }],
-          [{ name: 'JPN', value: '日本' },
-          { name: 'ENG', value: '英国' },
-          { name: 'TUR', value: '法国' }]
+          [{ name: 'GARD', value: '带花园' },
+          { name: 'TREE', value: '带露台'}],
+          [{ name: 'ATT', value: '带阁楼' },
+          { name: 'BASE', value: '带地下室' }]
         ]
       }
     ]

@@ -1,8 +1,9 @@
 <!--pages/login/login.wxml-->
 <view class='loginImg'>
-  <text>大学评估  </text>
+  <image src='../../images/icons/logo.png' style='width:400rpx;height:180rpx;margin-top:100rpx;margin-left:175rpx;'/>
 </view>
-<view class='logintext'>
+<form>
+  <view class='logintext'>
   <view class='login-lo'>
     <image src='../../images/icons/phone.png' class='login-logo'></image>
     <input class='login-value' type='text' placeholder='手机号:'></input>
@@ -10,7 +11,7 @@
   <view class='login-lo'>
     <image src='../../images/icons/passwd.png' class='login-logo'></image>
     <input class='login-value' type='text' placeholder='密码:'></input>
-    <image src='../../images/viewpwd.png' class='login-logo'></image>
+    <image src='../../images/icons/viewpwd.png' class='login-logo'></image>
   </view>
   <view class='logintext-url'>
     <navigator class='login-url-nav'>
@@ -19,6 +20,7 @@
   </view>
 </view>
 <view class='loginBtn'>
-  <button class='loginBtn-login'>登录</button>
-  <button class='loginBtn-regist'>注册</button>
+  <button class='loginBtn-login' bindtap="login">登录</button>
+  <button class='loginBtn-regist' bindtap="login">微信授权</button>
 </view>
+</form>

@@ -1,6 +1,8 @@
 /* pages/login/login.wxss */
 .loginImg {
   height: 350rpx;
+  display: flex;
+  flex-direction:column;
 }
 .logintext {
   height: 280rpx;

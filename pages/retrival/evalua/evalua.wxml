@@ -33,23 +33,25 @@
 </view>
 <view class='lower'wx:for="{{listItem}}">
   <view class='lower_left'>
-    <text style='margin-left:20rpx;margin-top:10rpx;font-size:28rpx;'>{{item.name}}</text>
+    <text style='margin-left:20rpx;margin-top:10rpx;font-size:28rpx;'>{{item.secenry}}</text>
   </view>
-  <view class='lower_right'>
-    <view class='right_item' >
-      <checkbox-group bindchange="checkboxChange">
-        <label class="checkbox">
-          <checkbox   class='checkstyle' value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
-        </label>
+  <view class='lower_right' >
+    <view class='right_item' wx:for="{{item.list}}">
+      <checkbox-group bindchange="checkboxChange" style='display: flex;flex-direction:row;' >
+        <view class="checkboxsty" wx:for="{{item}}">
+          <label>
+            <checkbox value="{{item.name}}" checked="{{item.checked}}"/>{{item.value}}
+          </label>
+        </view>
       </checkbox-group>
     </view>
   </view>
 </view>
 <view class='lower_bottom'>
   <view class='tom_button'>
-    <button style='background-color:#368BDB;' bindtap='assessResult'>评估一下</button>
+    <button style='background-color:#368BDB;color:#ffffff;' bindtap='assessResult'>评估一下</button>
   </view>
   <view class='tom_button'>
-    <button>重置信息</button>
+    <button style='border:1rpx solid #368BDB;'>重置信息</button>
   </view>
 </view>

@@ -41,19 +41,18 @@
 .lower_left{
   height: 140rpx;
   width: 190rpx;
-  border:1rpx solid rebeccapurple;
 }
 .lower_right {
   height: 168rpx;
   width: 556rpx;
-  border:1rpx solid green;
   display: flex;
   flex-direction: column;
 }
 .right_item {
   height: 83rpx;
   width: 550rpx;
-  border:1rpx solid yellow;
+  display: flex;
+  flex-direction: row;
 }
 .lower_bottom {
   height:200rpx;
@@ -66,11 +65,10 @@
   margin-left: 60rpx;
   margin-top: 60rpx;
 }
-.checkstyle {
-  position: absolute; 
-  left: 0; 
-  top: 0; 
-  width: 20px; 
-  height: 20px; 
-  opacity: 0;
+.checkboxsty {
+  margin-top:14rpx;
+  height: 77rpx;
+  width: 180rpx;
+  font-size:24rpx;
+  color:#9A9A9A;
 }

@@ -1,11 +1,11 @@
 {
   "pages":[
+    "pages/login/login",
     "pages/home/home",
     "pages/map/map",
     "pages/retrival/evalua/evalua",
     "pages/real/real",
     "pages/about/about",
-    "pages/login/login",
     "pages/map/detail/detail",
     "pages/map/detailop/detailop",
     "pages/map/search/search",

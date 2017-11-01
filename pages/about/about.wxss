@@ -1,1 +1,73 @@
 /* pages/about/about.wxss */
+.pbackground {
+  background-color:#F4F4F4;
+  display:flex;
+  flex-direction:column;
+}
+.protitle {
+  font-size:40rpx;
+  margin-left:55rpx;
+  margin-top:20rpx;
+  margin-bottom:20rpx;
+}
+.procontent {
+  margin:20rpx;
+  font-size:32rpx;
+}
+.comprofile {
+  height:180rpx;
+  width:690rpx;
+  margin-left:30rpx;
+  border:1rpx solid #E2E2E2;
+  background-color:white;
+  display: flex;
+  flex-direction:cloumn;
+}
+.team {
+  height:390rpx;
+  width:690rpx;
+  margin-left:30rpx;
+  border:1rpx solid #E2E2E2;
+  background-color:white;
+}
+.teamlist {
+  height: 127rpx;
+  width:650rpx;
+  margin-left:20rpx;
+  border-bottom:3rpx solid #E2E2E2;
+  display: flex;
+  flex-direction:row;
+}
+tlist_left {
+  height: 126rpx;
+  width:127rpx;
+  border-radius:40rpx;
+}
+.tlist_rignt {
+  height:127rpx;
+  width:533rpx;
+  display: flex;
+  flex-direction:column;
+}
+.contact {
+  height: 240rpx;
+  background-color:white;
+  border-bottom:30rpx solid #F4F4F4;
+  display:flex;
+  flex-direction:column;
+}
+.contactlist {
+  height:70rpx;
+  display: flex;
+  flex-direction:row;
+}
+.contactext {
+  margin-left:20rpx;
+  margin-top:15rpx;
+  font-size:30rpx;
+}
+.contactell {
+  height:100rpx;
+  display: flex;
+  flex-direction:row;
+}

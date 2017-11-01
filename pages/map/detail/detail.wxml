@@ -1,2 +1,69 @@
 <!--pages/detail/detail.wxml-->
-<text>pages/detail/detail.wxml</text>
+<view class='detailpic'>
+  <view style='display:flex;flex-direction:column;'>
+    <image src='../../../images/house/house01.jpg'  style='height:360rpx;width:750rpx;'></image>
+    <view style='margin-top:-330rpx;margin-left:60rpx;width:630rpx;height:90rpx;background-color:#334455;border-radius:10rpx;'> </view>
+  </view>
+  <view style='margin-top:240rpx;background-color:white;'>
+    <text>东方小区</text>
+    <view>
+      <text>均价：</text>
+      <text>45000:</text>
+      <text>(元/m)</text>
+    </view>
+  </view>
+</view>
+<view class='information'>
+  <view style='height:77rpx;border-bottom:3rpx solid #F4F4f4;'>
+    <text>基本信息</text>
+  </view>
+  <view style='display；flex;flex-direction:row;'>
+    <text>地址:</text>
+    <text>洪文-里1-135号</text>
+  </view>
+</view>
+<view class='garde'>
+  <view style='height:77rpx;border-bottom:3rpx solid #F4F4f4;'>
+    <text>小区评级</text>
+  </view>
+</view>
+<!-- =========================从评估结果拷贝========================-->
+<view class='ecentral'>
+  <view class='centralup'>
+    <text style='margin-left:50rpx;margin-top:15rpx;'>近期成交案例</text>
+  </view> 
+  <view class='centralmid'>
+    <text style='font-size:30rpx;color:#368BDB;width:70rpx;margin-top:30rpx;margin-left:30rpx;'> 序号</text>
+    <text style='font-size:30rpx;color:#368BDB;width:170rpx;margin-top:30rpx;margin-left:20rpx;'> 小区名称 </text>
+    <view class='textstyle'> 
+    <text>建筑面积</text> <text>(㎡)</text> 
+    </view>
+    <view class='textstyle'> 
+    <text>成交总价</text> <text>(万元)</text> 
+    </view>
+    <view class='textstyle'> 
+    <text>成交单价</text> <text>（元/㎡）</text> 
+    </view>
+  </view> 
+  <view class='centralist' wx:for="{{detaiList}}">
+    <text style='font-size:30rpx;margin-top:10rpx;margin-left:48rpx;'>{{item.id}}</text>
+    <text style='font-size:30rpx;margin-top:10rpx;margin-left:53rpx;'>{{item.name}}</text>
+    <text style='font-size:30rpx;margin-top:10rpx;margin-left:70rpx;'>{{item.area}}</text>
+    <text style='font-size:30rpx;margin-top:10rpx;margin-left:75rpx;'>{{item.total}}</text>
+    <text style='font-size:30rpx;margin-top:10rpx;margin-left:90rpx;'>{{item.price}}</text>
+  </view>   
+</view>
+<!--   ============================================================-->
+<view class='trend'>
+  <view style='height:77rpx;border-bottom:3rpx solid #F4F4f4;'>
+    <text>房价走势</text>
+  </view>
+</view>
+<view class='position'>
+  <view style='height:77rpx;border-bottom:3rpx solid #F4F4f4;'>
+    <text>小区位置</text>
+  </view>
+</view>
+<view class='hotline'>
+
+</view>

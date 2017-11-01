@@ -7,7 +7,7 @@
     <input class='search' type='text' placeholder='请输入要查询的小区名称/地址' placeholder-style='color: #7A7A7A;font-size:33rpx;'/>
     <icon type="search" size="33" color='#268BDB' style='margin-top: 8rpx;margin-left:40rpx;' bindtap='listHouse'/>
   </view>
-  <view class='dream'>  
+  <view class='dream' bindtap='gotoResult'>  
     <image src='../../images/otherimg/dream.png' style='width:100%;height:100%;'></image>
   </view>
 </view>

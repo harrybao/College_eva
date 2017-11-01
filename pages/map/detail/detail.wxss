@@ -1,1 +1,55 @@
 /* pages/detail/detail.wxss */
+.detailpic {
+  height:460rpx;
+  border-bottom:16rpx solid #F4F4F4;
+}
+.information {
+  height:400rpx;
+  border-bottom:16rpx solid #F4F4F4;
+}
+.garde{
+  height: 600rpx;
+  border-bottom:16rpx solid #F4F4F4;
+}
+/*==================================拷贝================================*/
+.ecentral {
+  height:470rpx;
+  border-bottom:16rpx solid #F4F4F4;
+}
+.centralup {
+  height: 80rpx;
+  display: flex;
+  flex-direction: column;
+}
+.centralmid {
+  height:100rpx;
+  background-color:#EBF2FC;
+  display:flex;
+  flex-direction:row;
+}
+.textstyle{
+  display:flex;
+  flex-direction:column;
+  font-size:30rpx;
+  color:#368BDB;
+  width:150rpx;
+  margin-top:10rpx;
+}
+.centralist {
+  height: 60rpx;
+  display:flex;
+  flex-direction:row;
+}
+/*========================================================*/
+.trend {
+  height:700rpx;
+  border-bottom:16rpx solid #F4F4F4;
+}
+.position {
+  height: 400rpx;
+  border-bottom:16rpx solid #F4F4F4;
+}
+.hotline {
+  height:140rpx;
+  background-color: yellowgreen;
+}

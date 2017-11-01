@@ -1,2 +1,56 @@
 <!--pages/retrival/result/result.wxml-->
-<text>pages/retrival/result/result.wxml</text>
+<view class='eupper'>
+  <view class='upcentral'>
+    <view class='upcentralmid'>
+      <text style='font-size:34rpx;  color:#ffffff;margin-left:50rpx;margin-top:30rpx;'>万科广场二期天域</text>
+      <view class='detialbtn' bindtap="todetailPage"> 
+        <text style='margin-left:8rpx;color:#368BDB;'>小区</text>
+        <text  style='margin-left:8rpx;color:#368BDB;'>详情</text> 
+      </view>
+    </view>
+    <view class='upcenlow'>
+      <view class='upcenlow_list' wx:for="{{priceData}}">
+        <text style='font-size:30rpx;color:#ffffff;'>{{item.pname}}</text>
+        <text style='font-size:60rpx;margin-top:30rpx;color:#ffffff;'>{{item.price}}</text>
+      </view>
+    </view>
+  </view>
+  <view class="upmiddle">
+    <image src='../../../images/otherimg/assess.png' style='height:100rpx;width:100%;'></image>
+  </view>
+  <view class='uplower'>
+    <view style='margin-left:50rpx;font-size:30rpx;color:#9A9A9A;width:650rpx;'>
+      <text>{{remark}}</text>
+    </view>
+  </view>
+</view>
+<view class='ecentral'>
+  <view class='centralup'>
+    <text style='margin-left:50rpx;margin-top:15rpx;'>近期成交案例</text>
+  </view> 
+  <view class='centralmid'>
+    <text style='font-size:30rpx;color:#368BDB;width:70rpx;margin-top:30rpx;margin-left:30rpx;'> 序号</text>
+    <text style='font-size:30rpx;color:#368BDB;width:170rpx;margin-top:30rpx;margin-left:20rpx;'> 小区名称 </text>
+    <view class='textstyle'> 
+    <text>建筑面积</text> <text>(㎡)</text> 
+    </view>
+    <view class='textstyle'> 
+    <text>成交总价</text> <text>(万元)</text> 
+    </view>
+    <view class='textstyle'> 
+    <text>成交单价</text> <text>（元/㎡）</text> 
+    </view>
+  </view> 
+  <view class='centralist' wx:for="{{detaiList}}">
+    <text style='font-size:30rpx;margin-top:10rpx;margin-left:48rpx;'>{{item.id}}</text>
+    <text style='font-size:30rpx;margin-top:10rpx;margin-left:53rpx;'>{{item.name}}</text>
+    <text style='font-size:30rpx;margin-top:10rpx;margin-left:70rpx;'>{{item.area}}</text>
+    <text style='font-size:30rpx;margin-top:10rpx;margin-left:75rpx;'>{{item.total}}</text>
+    <text style='font-size:30rpx;margin-top:10rpx;margin-left:90rpx;'>{{item.price}}</text>
+  </view>   
+</view>
+<view class='elower'>
+  <image src='../../../images/icons/receiver.png' style='height:50rpx;width:50rpx;margin-left:120rpx;margin-top:90rpx;'/>
+  <text style='margin-top:90rpx;margin-left:20rpx;color:#515151;'>委托评估:</text>
+  <text style='margin-top:90rpx;margin-left:10rpx;color:#32912a;'>18091080814</text>
+</view>

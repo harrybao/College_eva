@@ -5,7 +5,53 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    priceData: [
+      {
+        pname: "评估总价 （万元）",
+        price: "368.20"
+      },
+      {
+        pname: "评估单价 （元/平方米）",
+        price: "2700"
+      }
+    ],
+    detaiList: [
+      {
+        id: 1,
+        name: "巴厘香泉",
+        area: 87.49,
+        total: 210,
+        price: 24003
+      },
+      {
+        id: 2,
+        name: "城北新村",
+        area: 87.49,
+        total: 210,
+        price: 24003
+      },
+      {
+        id: 3,
+        name: "加州花园",
+        area: 87.49,
+        total: 210,
+        price: 24003
+      },
+      {
+        id: 4,
+        name: "华昌小区",
+        area: 87.49,
+        total: 210,
+        price: 24003
+      },
+      {
+        id: 5,
+        name: "未来橙堡",
+        area: 87.49,
+        total: 210,
+        price: 24003
+      }
+    ]
   },
 
   /**
