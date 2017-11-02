@@ -38,7 +38,7 @@
     <view class='contactell'>
       <text style='font-size:33rpx;margin-left:60rpx;margin-top:33rpx;color:#707070;'>{{hotline}}</text>
       <text style='font-size:33rpx;margin-left:10rpx;margin-top:33rpx;color:#3EAF35'>{{hotell}}7</text>
-      <image src='{{hotimg}}'style='width:80rpx;height:80rpx;margin-left:180rpx;'/>
+      <image src='{{hotimg}}'style='width:80rpx;height:80rpx;margin-left:180rpx;' bindtap='callTell' />
     </view>
   </view>
 </view>

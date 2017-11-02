@@ -1,26 +1,27 @@
 <!--pages/login/login.wxml-->
-<view class='loginImg'>
-  <image src='../../images/icons/logo.png' style='width:400rpx;height:180rpx;margin-top:100rpx;margin-left:175rpx;'/>
+<view class='tatalpage'>
+  <image src='{{logo}}' style='width:400rpx;height:180rpx;margin-top:100rpx;margin-left:175rpx;margin-bottom:100rpx;'/>
+
+  <form bindsubmit='formSubmit'>
+    <view style='height: 300rpx;'>
+      <view class='login-lo'>
+        <image src='{{phoneImg}}' class='login-logo'/>
+        <input class='login-value' name='phonenum' type='text' placeholder='手机号:'/>
+      </view> 
+      <view class='login-lo'>
+        <image src='{{passwd}}' class='login-logo'/>
+        <input class='login-value' name='passwd' type='text' placeholder='密码:'/>
+        <image src='{{viewpwd}}' style='height:55rpx;width:55rpx;margin-top:21rpx;'/>
+      </view>
+      <view style='margin-top: 20rpx;margin-left: 530rpx;'>
+        <label style='color: #368bdb;font-size:34rpx;'bindtap='ForgetPWD'>忘记密码?</label>
+      </view>
+    </view>
+
+    <button class='loginBtn-login' form-type='submit' >登录</button>
+    <button class='loginBtn-regist' >微信授权</button>
+
+  </form>
+
 </view>
-<form>
-  <view class='logintext'>
-  <view class='login-lo'>
-    <image src='../../images/icons/phone.png' class='login-logo'></image>
-    <input class='login-value' type='text' placeholder='手机号:'></input>
-  </view> 
-  <view class='login-lo'>
-    <image src='../../images/icons/passwd.png' class='login-logo'></image>
-    <input class='login-value' type='text' placeholder='密码:'></input>
-    <image src='../../images/icons/viewpwd.png' class='login-logo'></image>
-  </view>
-  <view class='logintext-url'>
-    <navigator class='login-url-nav'>
-      <text class='logintext-url-text'>忘记密码?</text>
-    </navigator>
-  </view>
-</view>
-<view class='loginBtn'>
-  <button class='loginBtn-login' bindtap="login">登录</button>
-  <button class='loginBtn-regist'>微信授权</button>
-</view>
-</form>
+  

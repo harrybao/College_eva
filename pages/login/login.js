@@ -5,16 +5,28 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    logo:"../../images/icons/logo.png",
+    phoneImg:"../../images/icons/phone.png",
+    passwd:"../../images/icons/passwd.png",
+    viewpwd:"../../images/icons/viewpwd.png"
   },
-  login:function(){
-    wx.switchTab({
-      url: '../home/home',
-    })
+
+  formSubmit:function(e){
+    if (e.detail.value.phonenum== 1234&&e.detail.value.passwd==1234){
+      wx.switchTab({
+        url: '../home/home',
+      })
+    } 
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
+  ForgetPWD:function(){
+    wx.showToast({
+      title: '正在跳转',
+      icon: 'clear',
+      duration: 2000
+    }
+    )
+  },
+
   onLoad: function (options) {
   
   },

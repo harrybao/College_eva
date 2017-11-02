@@ -24,7 +24,7 @@ Page({
         level: "房地产估价师"
       },
       {
-        headImg: '../../images/otherimg/headImg00.jpg',
+        headImg: '../../images/otherimg/headImg02.jpg',
         memname: "陈发声",
         position: "项目经理",
         level: "房地产估价师"
@@ -44,6 +44,11 @@ Page({
     ]
   },
 
+  callTell:function(){
+    wx.makePhoneCall({
+      phoneNumber: '400-251-38007',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */
