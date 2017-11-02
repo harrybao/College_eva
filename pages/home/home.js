@@ -27,7 +27,7 @@ Page({
   },
   bindViewBottom: function () {
     wx.switchTab({
-      url:'../evalua/evalua',
+      url:'../retrival/retrival',
     })
   },
 

@@ -1,8 +1,13 @@
 <!--pages/map/map.wxml-->
-<view class='map'>
-  <view class='mapev'>租赁价格</view>
-  <view class='mapev'>市场价格</view>
-  <view class='mapev'>评估价格</view>
-   <icon type='search' size='26' style='margin-top:20rpx;'bindtap="quarSearch"/>
+<view class='titles'>
+  <view class="swiper-tab {{currentTab==0 ? 'on' : ''}}" data-current="0" bindtap="swichNav">租赁价格
+  </view> 
+  <view class="swiper-tab {{currentTab==1 ? 'on' : ''}}" data-current="1" bindtap="swichNav">市场价格
+  </view>
+  <view class="swiper-tab {{currentTab==2 ? 'on' : ''}}" data-current="2" bindtap="swichNav">评估价格
+  </view>
+  <icon type='search' size='30' style='margin-top:20rpx;margin-left:40rpx;'bindtap="quarSearch"/>
 </view>
-<map id="map" scale="5"bindcontroltap="controltap"bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 1000rpx;"bindtap="gotoDetail"></map>
+<!--选项卡改变颜色一起变化  -->
+
+<map id="map" scale="5"bindcontroltap="controltap"bindmarkertap="markertap" bindregionchange="regionchange" show-location style="width: 100%; height: 1000rpx;"bindtap="gotoDetail" longitude='118.101010' latitude='24.46002'></map>

@@ -1,1 +1,73 @@
 /* pages/map/detailop/detailop.wxss */
+.detailpic {
+  height:500rpx;
+  border-bottom:16rpx solid #F4F4F4;
+  display: flex;
+  flex-direction:column;
+}
+.searchbox{
+  margin-top:-330rpx;
+  margin-left:60rpx;
+  width:630rpx;
+  height:90rpx;
+  border-radius:10rpx;
+  display: flex;
+  flex-direction:row;
+  background-color: #FFFFFF;
+}
+.search {
+  height: 30rpx;
+  width: 480rpx;
+  margin-left: 40rpx;
+  margin-top: 20rpx;
+}
+.numpage {
+  height:50rpx;
+  width:140rpx;
+  margin-top:160rpx;
+  margin-left:560rpx;
+  background-color:#707070;
+  filter:opacity(60%);
+  border-radius:10rpx;
+  font-size:30rpx;
+  color:white;
+  display: flex;
+  flex-direction:column;
+}
+.uptail{
+  margin-top:30rpx;
+  background-color:white;
+  display:flex;
+  flex-direction:column;
+}
+/*=========================================================================================*/
+.detailtable {
+  display: flex;
+  flex-direction:column;
+}
+.table{
+  height:90rpx;
+  width:100%;
+  border-bottom:3rpx solid #BFBFBF;
+  display: flex;
+  flex-direction:row;
+}
+.tablehead {
+  width:180rpx;
+  height:90rpx;
+  border-left:3rpx solid #BFBFBF;
+  background-color:#F4F4F4;
+  font-size:33rpx;
+  display: flex;
+  flex-direction:row;
+  text-align: center;
+}
+.tablemat {
+  width:180rpx;
+  height:90rpx;
+  border-left:3rpx solid #BFBFBF;
+  background-color:#F4F4F4;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+}

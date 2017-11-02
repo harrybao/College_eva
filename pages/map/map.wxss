@@ -1,12 +1,20 @@
 /* pages/map/map.wxss */
-.map {
+
+/*选项卡样式  */
+  .titles {
+  height: 100rpx;
   display: flex;
   flex-direction: row;
-  height: 100rpx;
+  text-align: center;
 }
-.mapev {
-  margin-top:26rpx;
-  margin-left: 10rpx;
-  height: 30rpx;
-  width:220rpx;
-}
+.swiper-tab{
+    display: inline-block;  
+    width: 155rpx; 
+    margin-left:50rpx;
+    padding-top: 27rpx;   
+} 
+.on{ 
+  color:#368bdb;  
+  border-bottom: 6rpx solid #368bdb; 
+} 
+/*选项卡样式  */

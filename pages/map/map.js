@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-  
+    currentTab: 0,//选项卡初始值
+    tabList: [
+      { listname: "租赁价格" },
+      { listname: "市场价格" },
+      { listname: "评估价格" }
+    ]
   },
   quarSearch: function () {
     wx.navigateTo({
@@ -20,6 +25,18 @@ Page({
       complete: function(res) {},
     })
   },
+//选项卡函数定义===========================================
+  swichNav: function (e) {
+    var that = this;
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
+  },
+  // =============================================
   /**
    * 生命周期函数--监听页面加载
    */

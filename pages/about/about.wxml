@@ -20,7 +20,7 @@
       </view>
       <view class='tlist_rignt'>
         <view style='display:flex;flex-direction:row;height:60rpx;'>
-          <view style='margin-left:30rpx;margin-top:25rpx;width:10rpx;height:30rpx;background-color:#FD4D01;'/>
+          <view style='margin-left:30rpx;margin-top:29rpx;width:6rpx;height:30rpx;background-color:#FD4D01;'/>
           <text style='margin-left:20rpx;margin-top:24rpx;font-size:30rpx'>{{item.memname}}</text>
           <text style='margin-left:100rpx;margin-top:24rpx;font-size:30rpx;color:#707070;'>{{item.position}}</text>
         </view>
@@ -38,7 +38,7 @@
     <view class='contactell'>
       <text style='font-size:33rpx;margin-left:60rpx;margin-top:33rpx;color:#707070;'>{{hotline}}</text>
       <text style='font-size:33rpx;margin-left:10rpx;margin-top:33rpx;color:#3EAF35'>{{hotell}}7</text>
-      <image src='{{hotimg}}'style='width:80rpx;height:80rpx;margin-left:200rpx;'></image>
+      <image src='{{hotimg}}'style='width:80rpx;height:80rpx;margin-left:180rpx;'/>
     </view>
   </view>
 </view>

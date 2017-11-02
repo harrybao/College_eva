@@ -1,36 +1,46 @@
 <!--pages/detail/detail.wxml-->
 <view class='detailpic'>
   <view style='display:flex;flex-direction:column;'>
-    <image src='../../../images/house/house01.jpg'  style='height:360rpx;width:750rpx;'></image>
-    <view style='margin-top:-330rpx;margin-left:60rpx;width:630rpx;height:90rpx;background-color:#334455;border-radius:10rpx;'> </view>
+    <image src='../../../images/house/house02.jpg'  style='height:360rpx;width:750rpx;'></image>
+    <view class='searchbox'> 
+      <input class='search' type='text' placeholder='小区搜索' placeholder-style='color: #9A9A9A;font-size:35rpx;'/>
+      <icon type="search" size="30" color='#9A9A9A' style='margin-top: 16rpx;'/>
+    </view>
+    <view class='numpage'>
+      <text style='filter:opacity(100%);margin-top:5rpx;margin-left:20rpx;'>共25张</text> 
+    </view>
   </view>
-  <view style='margin-top:240rpx;background-color:white;'>
-    <text>东方小区</text>
-    <view>
-      <text>均价：</text>
-      <text>45000:</text>
-      <text>(元/m)</text>
+  <view class='uptail' bindtap="gotoDetailop">
+    <text style='margin-top:25rpx;margin-left:50rpx;'>东方小区</text>
+    <view style='margin-top:5rpx;margin-left:50rpx;display:flex;flex-direction:row;'>
+      <text style='font-size:33rpx;color:#C3C3C3;'>均价：</text>
+      <text style='font-size:33rpx;margin-left:10rpx;color:#FD4C00;'>45000</text>
+      <text style='font-size:23rpx;margin-left:10rpx;margin-top:10rpx;'>(元/m)</text>
+      <image src='../../../images/icons/dropdown.png' style='height:30rpx;width:30rpx;margin-left:30rpx;margin-top:10rpx;'/>
     </view>
   </view>
 </view>
 <view class='information'>
-  <view style='height:77rpx;border-bottom:3rpx solid #F4F4f4;'>
-    <text>基本信息</text>
+  <view class='centralup'>
+    <text  class='centraluptt'>基本信息</text>
   </view>
-  <view style='display；flex;flex-direction:row;'>
-    <text>地址:</text>
-    <text>洪文-里1-135号</text>
-  </view>
+  <view style='height:237rpx;width:630rpx;margin:40rpx 60rpx;'>
+    <view style='display:flex;flex-direction:row;' wx:for="{{InformationList}}">
+      <text style='font-size:33rpx;margin-top:15rpx;color:#C2C2C2;'>{{item.inforname}}</text>
+      <text style='font-size:33rpx;margin-left:20rpx;margin-top:15rpx;'>{{item.inforvalue}}</text>
+    </view>
+  </view> 
 </view>
 <view class='garde'>
-  <view style='height:77rpx;border-bottom:3rpx solid #F4F4f4;'>
-    <text>小区评级</text>
+  <view class='centralup'>
+    <text  class='centraluptt'>小区评级</text>
   </view>
+
 </view>
 <!-- =========================从评估结果拷贝========================-->
 <view class='ecentral'>
-  <view class='centralup'>
-    <text style='margin-left:50rpx;margin-top:15rpx;'>近期成交案例</text>
+  <view class='centralup' style='border-bottom:0rpx ;'>
+    <text class='centraluptt' >近期成交案例</text>
   </view> 
   <view class='centralmid'>
     <text style='font-size:30rpx;color:#368BDB;width:70rpx;margin-top:30rpx;margin-left:30rpx;'> 序号</text>
@@ -55,15 +65,18 @@
 </view>
 <!--   ============================================================-->
 <view class='trend'>
-  <view style='height:77rpx;border-bottom:3rpx solid #F4F4f4;'>
-    <text>房价走势</text>
+  <view class='centralup'>
+    <text  class='centraluptt'>房价走势</text>
   </view>
 </view>
 <view class='position'>
-  <view style='height:77rpx;border-bottom:3rpx solid #F4F4f4;'>
-    <text>小区位置</text>
+  <view class='centralup'>
+    <text  class='centraluptt'>小区位置</text>
   </view>
+  <map style='width:610rpx;height:300rpx;margin-top:50rpx;margin-left:70rpx;' longitude='118.101010' latitude='24.46002'></map>
 </view>
 <view class='hotline'>
-
+  <text style='font-size:33rpx;margin-left:136rpx;margin-top:50rpx;color:#C8C8C8;'>咨询热线：</text>
+  <text style='font-size:33rpx;margin-left:5rpx;margin-top:50rpx;color:#3EAF35;'>400 251 3807</text>
+  <image src='../../../images/icons/tellphone.png' style='height:90rpx;width:90rpx;margin-top:20rpx;margin-left:47rpx;'/>
 </view>

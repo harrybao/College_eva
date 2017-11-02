@@ -51,9 +51,31 @@ Page({
         total: 210,
         price: 24003
       }
+    ],
+    InformationList:[
+      {
+        inforname:"地址:",
+        inforvalue:"洪文-里1-135号"
+      },
+      {
+        inforname: "区域:",
+        inforvalue: "思明区"
+      },
+      {
+        inforname: "片区:",
+        inforvalue: "莲前"
+      },
+      {
+        inforname: "建成年份:",
+        inforvalue: "1998年"
+      }
     ]
   },
-
+  gotoDetailop:function(){
+    wx.navigateTo({
+      url: '../detailop/detailop',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

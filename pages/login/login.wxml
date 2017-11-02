@@ -21,6 +21,6 @@
 </view>
 <view class='loginBtn'>
   <button class='loginBtn-login' bindtap="login">登录</button>
-  <button class='loginBtn-regist' bindtap="login">微信授权</button>
+  <button class='loginBtn-regist'>微信授权</button>
 </view>
 </form>

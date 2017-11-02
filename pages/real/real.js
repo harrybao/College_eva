@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    currentTab: 0,
     imageWidth: wx.getSystemInfoSync().windowWidth,
     imgUrls: [
       '../../images/house/house01.jpg',
@@ -17,32 +18,54 @@ Page({
       listPoint:'../../images/icons/point.png',
       listValue:"汇丰国际广场",
       listDate:"2017年10月31日",
-      listDetil:"首开。回峰国际3003004343。。。。"
+      listDetil: "首开-万科白鹭郡首期推出200套精工..."
     },
       {
         listImg: '../../images/house/house06.jpg',
         listPoint: '../../images/icons/point.png',
         listValue: "汇丰国际广场",
         listDate: "2017年10月31日",
-        listDetil: "首开。回峰国际3003004343。。。。"
+        listDetil: "首开-万科白鹭郡首期推出200套精工..."
       }
       ,{
       listImg:'../../images/house/house07.jpg',
       listPoint:'../../images/icons/point.png',
       listValue:"汇丰国际广场",
       listDate:"2017年10月31日",
-      listDetil:"首开。回峰国际3003004343。。。。"
+      listDetil: "首开-万科白鹭郡首期推出200套精工..."
       },
        {
       listImg:'../../images/house/house03.jpg',
       listPoint:'../../images/icons/point.png',
       listValue:"汇丰国际广场",
       listDate:"2017年10月31日",
-      listDetil:"首开。回峰国际3003004343。。。。"
+      listDetil:"首开-万科白鹭郡首期推出200套精工..."
       }
+    ],
+    tabList:[
+      { listname: "行业动态" },
+      { listname: "政策法规" },
+      { listname: "研究成果" }
     ]
   },
 
+  bindChange: function (e) {
+    var that = this;
+    that.setData({ currentTab: e.detail.current });
+
+  },
+// 选择选项卡处理函数================
+  swichNav: function (e) {
+    var that = this;
+    if (this.data.currentTab === e.target.dataset.current) {
+      return false;
+    } else {
+      that.setData({
+        currentTab: e.target.dataset.current
+      })
+    }
+  },
+  // =================================
   /**
    * 生命周期函数--监听页面加载
    */
