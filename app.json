@@ -11,7 +11,9 @@
     "pages/map/search/search",
     "pages/retrival/retrival",
     "pages/retrival/cellist/cellist",
-    "pages/retrival/result/result"
+    "pages/retrival/result/result",
+    "pages/retrival/office/office",
+    "pages/retrival/parking/parking"
   ],
   "window":{
     "backgroundTextStyle":"light",

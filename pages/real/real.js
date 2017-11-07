@@ -42,11 +42,7 @@ Page({
       listDetil:"首开-万科白鹭郡首期推出200套精工..."
       }
     ],
-    tabList:[
-      { listname: "行业动态" },
-      { listname: "政策法规" },
-      { listname: "研究成果" }
-    ]
+
   },
 
   bindChange: function (e) {

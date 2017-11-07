@@ -40,6 +40,40 @@
   display:flex;
   flex-direction:column;
 }
+/*=========================================================================================*/
+.detailtable {
+  display: flex;
+  flex-direction:column;
+  border-bottom:16rpx solid #F4F4F4;
+}
+.table{
+  height:90rpx;
+  width:100%;
+  border-bottom:3rpx solid #BFBFBF;
+  display: flex;
+  flex-direction:row;
+}
+.tablehead {
+  width:180rpx;
+  height:90rpx;
+  border-left:3rpx solid #BFBFBF;
+  background-color:#F4F4F4;
+  font-size:33rpx;
+  display: flex;
+  flex-direction:row;
+  text-align: center;
+}
+.tablemat {
+  width:180rpx;
+  height:90rpx;
+  border-left:3rpx solid #BFBFBF;
+  background-color:#F4F4F4;
+  text-align: center;
+  display: flex;
+  flex-direction:column;
+}
+/*===============================================================================================  */
+
 .information {
   height:400rpx;
   border-bottom:16rpx solid #F4F4F4;
@@ -52,7 +86,7 @@
 }
 /*==================================拷贝================================*/
 .ecentral {
-  height:470rpx;
+  height:480rpx;
   border-bottom:16rpx solid #F4F4F4;
 }
 .centralup {
@@ -83,6 +117,13 @@
   height: 60rpx;
   display:flex;
   flex-direction:row;
+}
+/*列表斑马线样式设置  */
+.centralist:nth-child(ood){
+  background-color: #ffffff;
+}
+.centralist:nth-child(even){
+  background-color: #EBF2FC;
 }
 /*========================================================*/
 .trend {

@@ -50,7 +50,7 @@
   </view>   
 </view>
 <view class='elower'>
-  <image src='../../../images/icons/receiver.png' style='height:50rpx;width:50rpx;margin-left:120rpx;margin-top:90rpx;'/>
-  <text style='margin-top:90rpx;margin-left:20rpx;color:#515151;'>委托评估:</text>
-  <text style='margin-top:90rpx;margin-left:10rpx;color:#32912a;'>18091080814</text>
+  <image src='../../../images/icons/receiver.png' style='height:50rpx;width:50rpx;margin-left:120rpx;margin-top:80rpx;'/>
+  <text style='margin-top:80rpx;margin-left:20rpx;color:#515151;'>委托评估:</text>
+  <text style='margin-top:80rpx;margin-left:10rpx;color:#32912a;'>18091080814</text>
 </view>

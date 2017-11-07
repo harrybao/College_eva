@@ -5,32 +5,36 @@
 }
 
 .login-lo {
-  margin-left: 60rpx;
-  height: 100rpx;
-  width: 630rpx;
+  margin-left: 75rpx;
+  height: 90rpx;
+  width: 600rpx;
   display:flex;
   flex-direction:row;
   border-bottom: 2px solid #D7D7D7;
 }
 .login-value {
-  margin-top:30rpx;
+  margin-top:25rpx;
   margin-left:20rpx;
-  width:480rpx;
+  width:450rpx;
 }
 .login-logo {
-  height:65rpx;
-  width: 65rpx;
+  height:60rpx;
+  width: 60rpx;
   margin-top:20rpx;
 }
 .loginBtn-login {
-  margin: 100rpx;
-  margin-bottom: 50rpx;
+  margin-left: 115rpx;
+  margin-top:70rpx;
+  height:86rpx;
+  width:520rpx;
   background-color:#368bdb;
   color:white;
 }
 .loginBtn-regist {
-  margin: 100rpx;
-  margin-top: 10rpx;
+  margin-left: 115rpx;
+  margin-top: 50rpx;
+  height:86rpx;
+  width:520rpx;
   background-color: white;
   color:#368bdb;
   border:1px solid #368bdb;  

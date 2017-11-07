@@ -29,23 +29,6 @@ Page({
         ]
       },
       {
-        describe: "复式住宅",
-        pdata: [
-          {
-            pnumber: 45000,
-            unit: "(元/㎡)"
-          },
-          {
-            pnumber: 30,
-            unit: "(元/㎡.月)"
-          },
-          {
-            pnumber: 37000,
-            unit: "(元/㎡)"
-          }
-        ]
-      },
-      {
         describe: "挑高住宅",
         pdata: [
           {
@@ -80,41 +63,7 @@ Page({
         ]
       },
       {
-        describe: "双拼别墅",
-        pdata: [
-          {
-            pnumber: 45000,
-            unit: "(元/㎡)"
-          },
-          {
-            pnumber: 30,
-            unit: "(元/㎡.月)"
-          },
-          {
-            pnumber: 37000,
-            unit: "(元/㎡)"
-          }
-        ]
-      },
-      {
         describe: "联排别墅",
-        pdata: [
-          {
-            pnumber: 45000,
-            unit: "(元/㎡)"
-          },
-          {
-            pnumber: 30,
-            unit: "(元/㎡.月)"
-          },
-          {
-            pnumber: 37000,
-            unit: "(元/㎡)"
-          }
-        ]
-      },
-      {
-        describe: "SOHO",
         pdata: [
           {
             pnumber: 45000,

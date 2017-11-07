@@ -21,23 +21,23 @@
 }
 .houselist{
   height: 240rpx;
-  border-bottom:1rpx solid #7A7A7A;
+  border-bottom:2rpx solid #e2e2e2;
   display: flex;
   flex-direction: row;
 }
 .houseimg{
   width:260rpx;
-  height: 248rpx;
+  height: 238rpx;
 }
 .houseadd{
   width:260rpx;
-  height: 248rpx;
+  height: 238rpx;
   display: flex;
   flex-direction: column;
 }
 .priceflu {
   width: 230rpx;
-  height: 248rpx;
+  height: 238rpx;
   display: flex;
   flex-direction: column;
 }

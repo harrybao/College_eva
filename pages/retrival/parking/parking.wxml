@@ -1,0 +1,39 @@
+<!--pages/retrival/parking/parking.wxml-->
+<view class='upper'>
+  <view class='upper_top'>
+    <text style='margin-left:90rpx;color:#368BDB;font-size: 46rpx;'>{{community}}</text>
+  </view>
+  <view class='upper_top'>
+    <text style='font-size: 34rpx;margin-top:10rpx;'>{{mouth}}</text>
+    <text style='font-size: 32rpx;margin-top:12rpx;margin-left:30rpx;color:#FE5518;'>{{price}}</text>
+    <text style='font-size: 20rpx;margin-top:21rpx;margin-left:10rpx;'>{{unit}}</text>
+    <image src='../../../images/icons/dropdown.png' style='height:20rpx;width:20rpx;margin-top:23rpx;margin-left:10rpx;'/>
+  </view>
+</view>
+<view class='central'>
+  <view class='central_item'>
+    <text style='margin-left:20rpx;margin-top:10rpx;font-size:28rpx;'>物业类型：</text>
+    <picker bindchange="bindPickChange" value='{{index}}' range="{{array}}">
+      <text style='font-size:24rpx;color:#9A9A9A;margin-top:14rpx;margin-left:80rpx;'>{{array[index]}}</text>
+    </picker>   
+  </view>
+</view>
+
+<view class='central'>
+  <view class='central_item' style='width:100%;'>
+    <text style='margin-left:20rpx;margin-top:10rpx;font-size:28rpx;'>层次：</text>
+    <input style='number' placeholder="请输入" style='height:40rpx;width:100rpx;font-size:24rpx;margin-left:100rpx;'/>
+    <view class='layert'>层</view>
+    <input style='number' placeholder="请输入" style='height:40rpx;width:100rpx;font-size:24rpx;margin-left:120rpx;'/>
+    <view class='layert'>总层数</view>
+  </view>
+</view>
+
+<view class='lower_bottom'>
+  <view class='tom_button'>
+    <button style='background-color:#368BDB;color:#ffffff;' bindtap='assessResult'>评估一下</button>
+  </view>
+  <view class='tom_button'>
+    <button style='border:1rpx solid #368BDB;'>重置信息</button>
+  </view>
+</view>

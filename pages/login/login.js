@@ -12,7 +12,7 @@ Page({
   },
 
   formSubmit:function(e){
-    if (e.detail.value.phonenum== 1234&&e.detail.value.passwd==1234){
+    if (e.detail.value.phonenum== ''&&e.detail.value.passwd==''){
       wx.switchTab({
         url: '../home/home',
       })
@@ -25,6 +25,11 @@ Page({
       duration: 2000
     }
     )
+  },
+  evaluaPage:function(){
+    wx.navigateTo({
+      url: '../retrival/parking/parking',
+    })
   },
 
   onLoad: function (options) {

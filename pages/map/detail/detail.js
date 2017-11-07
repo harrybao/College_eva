@@ -5,6 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
+    hidebtn:"true",
     priceData: [
       {
         pname: "评估总价 （万元）",
@@ -69,14 +70,156 @@ Page({
         inforname: "建成年份:",
         inforvalue: "1998年"
       }
+    ],
+    tableHead: [
+      { name: "市场价格" },
+      { name: "租赁价格" },
+      { name: "评估单价" }
+    ],
+    tableMat: [
+      {
+        describe: "平层住宅",
+        pdata: [
+          {
+            pnumber: 45000,
+            unit: "(元/㎡)"
+          },
+          {
+            pnumber: 30,
+            unit: "(元/㎡.月)"
+          },
+          {
+            pnumber: 37000,
+            unit: "(元/㎡)"
+          }
+        ]
+      },
+      {
+        describe: "复式住宅",
+        pdata: [
+          {
+            pnumber: 45000,
+            unit: "(元/㎡)"
+          },
+          {
+            pnumber: 30,
+            unit: "(元/㎡.月)"
+          },
+          {
+            pnumber: 37000,
+            unit: "(元/㎡)"
+          }
+        ]
+      },
+      {
+        describe: "挑高住宅",
+        pdata: [
+          {
+            pnumber: 45000,
+            unit: "(元/㎡)"
+          },
+          {
+            pnumber: 30,
+            unit: "(元/㎡.月)"
+          },
+          {
+            pnumber: 37000,
+            unit: "(元/㎡)"
+          }
+        ]
+      },
+      {
+        describe: "独栋别墅",
+        pdata: [
+          {
+            pnumber: 45000,
+            unit: "(元/㎡)"
+          },
+          {
+            pnumber: 30,
+            unit: "(元/㎡.月)"
+          },
+          {
+            pnumber: 37000,
+            unit: "(元/㎡)"
+          }
+        ]
+      },
+      {
+        describe: "双拼别墅",
+        pdata: [
+          {
+            pnumber: 45000,
+            unit: "(元/㎡)"
+          },
+          {
+            pnumber: 30,
+            unit: "(元/㎡.月)"
+          },
+          {
+            pnumber: 37000,
+            unit: "(元/㎡)"
+          }
+        ]
+      },
+      {
+        describe: "联排别墅",
+        pdata: [
+          {
+            pnumber: 45000,
+            unit: "(元/㎡)"
+          },
+          {
+            pnumber: 30,
+            unit: "(元/㎡.月)"
+          },
+          {
+            pnumber: 37000,
+            unit: "(元/㎡)"
+          }
+        ]
+      },
+      {
+        describe: "SOHO",
+        pdata: [
+          {
+            pnumber: 45000,
+            unit: "(元/㎡)"
+          },
+          {
+            pnumber: 30,
+            unit: "(元/㎡.月)"
+          },
+          {
+            pnumber: 37000,
+            unit: "(元/㎡)"
+          }
+        ]
+      },
+      {
+        describe: "平层办公",
+        pdata: [
+          {
+            pnumber: 45000,
+            unit: "(元/㎡)"
+          },
+          {
+            pnumber: 30,
+            unit: "(元/㎡.月)"
+          },
+          {
+            pnumber: 37000,
+            unit: "(元/㎡)"
+          }
+        ]
+      },
     ]
   },
-  gotoDetailop:function(){
-    wx.navigateTo({
-      url: '../detailop/detailop',
+  priceDetail:function(){
+    this.setData({
+      hidebtn:!this.data.hidebtn
     })
   },
-
   /**
    * 生命周期函数--监听页面加载
    */

@@ -15,7 +15,7 @@
     <view style='margin-top:5rpx;margin-left:50rpx;display:flex;flex-direction:row;'>
       <text style='font-size:33rpx;color:#C3C3C3;'>均价：</text>
       <text style='font-size:33rpx;margin-left:10rpx;color:#FD4C00;'>45000</text>
-      <text style='font-size:23rpx;margin-left:10rpx;margin-top:10rpx;'>(元/m)</text>
+      <text style='font-size:23rpx;margin-left:10rpx;margin-top:10rpx;'>(元/㎡)</text>
       <image src='../../../images/icons/dropdown.png' style='height:30rpx;width:30rpx;margin-left:30rpx;margin-top:10rpx;'/>
     </view>
   </view>

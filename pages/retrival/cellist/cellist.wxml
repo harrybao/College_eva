@@ -1,13 +1,14 @@
 <!--pages/cellist/cellist.wxml-->
 <view class='upper'>
   <view class='upper_topp'>
-    <input class='search' type='text' placeholder='{{searchtitle}}' placeholder-style='color: white;font-size:30rpx;'/>
-    <icon type="search" size="24" color='white' style='margin-top: 16rpx;'/>
+    <input class='search' type='text' placeholder='{{searchtitle}}' placeholder-style='color: white;font-size:30rpx;' />
+    <icon type="search" size="24" color='white' style='margin-top: 16rpx;' />
   </view>
 </view>
-<view class='houselist'  bindtap='evaluaDetail' wx:for='{{listData}}' >
+
+<view class='houselist' bindtap='evaluaDetail' wx:for='{{listData}}'>
   <view class='houseimg'>
-    <image src='{{item.headImg}}' style='width:200rpx;height: 160rpx;margin-top:40rpx;margin-left:30rpx;'/>
+    <image src='{{item.headImg}}' style='width:200rpx;height: 160rpx;margin-top:40rpx;margin-left:30rpx;' />
   </view>
   <view class='houseadd'>
     <label style='font-size:33rpx;margin-top:45rpx;margin-left:10rpx;'>{{item.deupper}}</label>
@@ -15,9 +16,12 @@
     <label style='font-size:30rpx;margin-top:10rpx;margin-left:10rpx;'>{{item.address}}</label>
   </view>
   <view class='priceflu'>
-    <label style='font-size:33rpx;margin-top:65rpx;margin-left:20rpx;color:#FD4D01'>{{item.price}}
-      <text style='font-size:20rpx;margin-top:60rpx;margin-left:10rpx;'>(元/m)</text>
+    <label style='margin-top:65rpx;margin-left:20rpx;'>
+      <text style='font-size:33rpx;color:#FD4D01'>{{item.price}}</text>
+      <text style='font-size:20rpx;margin-top:60rpx;margin-left:10rpx;'>(元/㎡)</text>
     </label>
-    <label style='font-size:33rpx;margin-top:10rpx;margin-left:20rpx;color:#FD4D01'>{{item.percent}}</label>
+    <label style='font-size:33rpx;margin-top:10rpx;margin-left:30rpx;color:#FD4D01'>
+      <image src='{{item.updown}}' style='height:25rpx;width:25rpx;' /> {{item.percent}}
+    </label>
   </view>
 </view>

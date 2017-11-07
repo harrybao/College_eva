@@ -1,31 +1,35 @@
 <!--pages/home/home.wxml-->
+<!--搜索框以及logo样式设置  -->
 <view class='headborder'>
   <image src='../../images/icons/logowhite.png' style='margin-top: 15rpx;margin-left: 30rpx;height: 60rpx;width: 160rpx;' />
-  <view class='headborder-search' >
-    <input class='search-value' type='text' placeholder='搜索' placeholder-style='color: white;font-size:30rpx;'/>
-    <icon type="search" size="24" color='white' style='margin-top: 16rpx;'/>
+  <view class='headborder-search'>
+    <input class='search-value' type='text' placeholder='搜索' placeholder-style='color: white;font-size:30rpx;' />
+    <icon type="search" size="23" color='white' style='margin-top: 12rpx;' />
   </view>
 </view>
-  <swiper indicator-dots="true"
-  autoplay="true" interval="{{interval}}" duration="{{duration}}" style='height: 360rpx;'>
+<!--滑动播放控件样式  -->
+<swiper indicator-dots="true" autoplay="true" interval="{{interval}}" duration="{{duration}}" style='height: 360rpx;'>
   <block wx:for="{{imgUrls}}">
     <swiper-item>
-      <image src="{{item}}" class="slide-image" style="width: {{imageWidth}}px;"/>
+      <image src="{{item.route}}" class="slide-image" style="width: {{imageWidth}}px;" />
     </swiper-item>
   </block>
-  </swiper>
+</swiper>
+
 <view class='rollimg-slo'>
-  <text style='margin-left:80rpx;margin-top:40rpx;color: white;font-size: 44rpx;'>大学评估</text> 
+  <text style='margin-left:80rpx;margin-top:40rpx;color: white;font-size: 44rpx;'>大学评估</text>
   <text style='margin-left:80rpx;margin-top:10rpx;color: white;font-size:30rpx;'>专注价值发现</text>
 </view>
-<view style='height: 130rpx;background-color: white;'/>
+
+<view style='height: 130rpx;background-color: white;' />
+
 <view class='bottomimg'>
   <view class='bottomimg-rev' style='background-color: #467Cd4;margin-top: 150rpx;' bindtap='bindViewTap'>
-    <image src='../../images/icons/check.png' class='image-cha'/>
+    <image src='../../images/icons/check.png' class='image-cha' />
     <text class='bottomt'>地图查价</text>
   </view>
   <view class='bottomimg-rev' style='background-color: #FC5409;margin-top: 80rpx;' bindtap='bindViewBottom'>
-    <image src='../../images/icons/review.png' class='image-cha'/>
+    <image src='../../images/icons/review.png' class='image-cha' />
     <text class='bottomt'>房产评估</text>
   </view>
 </view>

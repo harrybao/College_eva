@@ -1,7 +1,5 @@
 /* pages/retrival/retrival.wxss */
-.container{
-  background-image:url(https://image.baidu.com/search/detail?ct=503316480&z=0&ipn=d&word=%E6%88%BF%E5%AD%90&step_word=&hs=0&pn=3&spn=0&di=71048426510&pi=0&rn=1&tn=baiduimagedetail&is=100598226%2C2412774286&istype=0&ie=utf-8&oe=utf-8&in=&cl=2&lm=-1&st=undefined&cs=3243444740%2C3663032225&os=15894243%2C1339137863&simid=0%2C0&adpicid=0&lpn=0&ln=1993&fr=&fmq=1509615324159_R&fm=&ic=undefined&s=undefined&se=&sme=&tab=0&width=undefined&height=undefined&face=undefined&ist=&jit=&cg=&bdtype=17&oriquery=&objurl=http%3A%2F%2Fe.hiphotos.baidu.com%2Fimage%2Fpic%2Fitem%2Fd439b6003af33a87754b8ddbcf5c10385243b5c9.jpg&fromurl=ippr_z2C%24qAzdH3FAzdH3Fooo_z%26e3B3tp7c_z%26e3Bv54AzdH3Fp7h7AzdH3Fda888dAzdH3F8nclb8_z%26e3Bip4s&gsm=&rpstart=0&rpnum=0);
-}
+
 .upperhead {
   height: 160rpx;
   width: 400rpx;

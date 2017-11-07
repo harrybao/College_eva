@@ -9,24 +9,6 @@ Page({
     mouth:"本月均价:",
     price:"19000",
     unit:"(元/㎡)",
-    listData:[
-      [{
-        listLeft:"物业类型：",
-        selectLeft:"请选择"
-      },
-      {
-        listLeft: "价值时点：",
-        selectLeft: "请选择"
-      }],
-      [{
-        listLeft: "建筑面积：",
-        selectLeft: "请输入"
-      },
-      {
-        listLeft: "电梯配置：",
-        selectLeft: "请选择"
-      }]
-    ],
     listItem: [
       {
         secenry:"内部设施：",
@@ -48,66 +30,115 @@ Page({
           { name: 'BASE', value: '带地下室' }]
         ]
       }
-    ]
+    ],
+    // 物业类型模拟数据
+    array: ['请选择》', '住宅', '别墅', '办公','车位'],
+    objectArray: [
+      {id: 0,name: '请选择'},
+      {id: 1,name: '住宅'},
+      {id: 2,name: '别墅'},
+      {id: 3,name: '办公'},
+      {id: 4,name: '车位'}
+    ],
+    index: 0,
+    // 建筑结构模拟数据
+    struarray: ['请选择》', '钢混', '混合', '砖木', ],
+    objectstruArray: [
+      {id: 0,name: '请选择》'},
+      {id: 1,name: '钢混'},
+      {id: 2,name: '混合'},
+      {id: 3,name: '砖木'}
+    ],
+    // 建筑面积模拟数据
+    struindex: 0,
+    aveaarray: ['请选择》', 'M<=60', '60<M<=90', '90<M<=144', 'M>144'],
+    objectaveaArray: [
+      {id: 0,name: '请选择》'},
+      {id: 1,name: 'M<=60'},
+      {id: 2,name: '60<M<=90'},
+      {id: 3,name: '90<M<=144'},
+      {id: 4,name: 'M>144'}
+    ],
+    // 装修模拟数据
+    aveaindex: 0,
+    renoarray: ['请选择》', '毛坯', '普通装修', '中档装修', '高档装修'],
+    objectrenoArray: [
+      {id: 0,name: '请选择》'},
+      {id: 1,name: '毛坯'},
+      {id: 2,name: '普通装修'},
+      {id: 3,name: '中档装修'},
+      {id: 4,name: '高档装修'
+      }
+    ],
+    renoindex: 0,
+    // 朝向模拟数据
+    direarray: ['请选择》', '南北', '南', '东南', '西南', '东西', '东', '西', '东北', '西北', '北'],
+    objectdireArray: [
+      {id: 0,name: '请选择》'},
+      {id: 1,name: '南北'},
+      {id: 2,name: '南'},
+      {id: 3,name: '东南'},
+      {id: 4,name: '西南'},
+      {id: 5,name: '东西'},
+      {id: 6,name: '东'},
+      {id: 7,name: '西'},
+      {id: 8,name: '东北'},
+      {id: 9,name: '西北'},
+      {id: 10,name: '北'}
+    ],
+    direindex: 0,
+    // 是否有电梯
+    elecarray: ['请选择》', '有', '无'],
+    objectelecArray: [
+      {id: 0,name: '请选择》'},
+      {id: 1,name: '有'},
+      {id: 2,name: '无'} 
+    ],
+    elecindex: 0,
   },
+  
   assessResult:function(){
     wx.navigateTo({
       url: '../result/result',
     })
   },
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-    
+// 下拉选择函数
+  bindPickChange: function (e) {
+    this.setData({
+      index: e.detail.value
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-    
+  bindPickStruChange: function (e) {
+    this.setData({
+      struindex: e.detail.value
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-    
+  bindPickAveaChange: function (e) {
+    this.setData({
+      aveaindex: e.detail.value
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-    
+  bindPickRenoChange: function (e) {
+    this.setData({
+      renoindex: e.detail.value
+    })
   },
 
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
-    
+  bindPickDireChange: function (e) {
+    this.setData({
+      direindex: e.detail.value
+    })
   },
 
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-    
+  bindPickElecChange: function (e) {
+    this.setData({
+      elecindex: e.detail.value
+    })
   },
 
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-    
-  },
 
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-    
-  }
+
 })

@@ -46,7 +46,7 @@
   height: 170rpx;
 }
 .ecentral {
-  height:470rpx;
+  height:480rpx;
   border-bottom:13rpx solid #F4F4F4;
 }
 .centralup {
@@ -73,8 +73,15 @@
   display:flex;
   flex-direction:row;
 }
+.centralist:nth-child(ood){
+  background-color: #ffffff;
+}
+.centralist:nth-child(even){
+  background-color: #EBF2FC;
+}
+
 .elower {
-  height:170rpx;
+  height:160rpx;
   display: flex;
   flex-direction:row;
 }

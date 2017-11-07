@@ -1,4 +1,4 @@
-<!--pages/evalua/evalua.wxml-->
+<!--pages/retrival/office/office.wxml-->
 <view class='upper'>
   <view class='upper_top'>
     <text style='margin-left:90rpx;color:#368BDB;font-size: 46rpx;'>{{community}}</text>

@@ -1,4 +1,4 @@
-/* pages/evalua/evalua.wxss */
+/* pages/retrival/parking/parking.wxss */
 .upper {
   height: 190rpx;
   width: 746rpx;
@@ -81,4 +81,3 @@
   font-size:24rpx;
   color:#9A9A9A;
 }
-

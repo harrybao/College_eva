@@ -1,6 +1,6 @@
 <!--pages/login/login.wxml-->
 <view class='tatalpage'>
-  <image src='{{logo}}' style='width:400rpx;height:180rpx;margin-top:100rpx;margin-left:175rpx;margin-bottom:100rpx;'/>
+  <image src='{{logo}}' style='width:400rpx;height:128rpx;margin-top:100rpx;margin-left:175rpx;margin-bottom:100rpx;'/>
 
   <form bindsubmit='formSubmit'>
     <view style='height: 300rpx;'>
@@ -13,13 +13,13 @@
         <input class='login-value' name='passwd' type='text' placeholder='密码:'/>
         <image src='{{viewpwd}}' style='height:55rpx;width:55rpx;margin-top:21rpx;'/>
       </view>
-      <view style='margin-top: 20rpx;margin-left: 530rpx;'>
+      <view style='margin-top: 20rpx;margin-left: 500rpx;'>
         <label style='color: #368bdb;font-size:34rpx;'bindtap='ForgetPWD'>忘记密码?</label>
       </view>
     </view>
 
     <button class='loginBtn-login' form-type='submit' >登录</button>
-    <button class='loginBtn-regist' >微信授权</button>
+    <button class='loginBtn-regist' bindtap='evaluaPage'>微信授权</button>
 
   </form>
 
